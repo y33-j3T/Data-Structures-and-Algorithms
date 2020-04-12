@@ -9,9 +9,9 @@ public class IntegerPair implements Comparable<IntegerPair> {
 
     public int compareTo(IntegerPair o) {
         if (!this.first().equals(o.first()))
-        return this.first() - o.first();
+            return this.first() - o.first();
         else
-        return this.second() - o.second();
+            return this.second() - o.second();
     }
 
     public Integer first() { return first; }

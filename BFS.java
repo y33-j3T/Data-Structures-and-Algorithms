@@ -4,6 +4,12 @@ import java.util.LinkedList;
 
 public class BFS {
 
+    /**
+    * @param source Vertex to begin with.
+    * @param parent Parents of vertices. Initialized with -1.
+    * @param visited Checklist of visited vertices. Initialized with 0.
+    * @param adjList Adjacency List. Initialized with neighbor vertices and their respective weighs
+    */
     public static void _BFS(int source, int[] parent, int[] visited, ArrayList<ArrayList<IntegerPair>> adjList) {
         Queue<Integer> q = new LinkedList<>();
         q.add(source);

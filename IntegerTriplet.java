@@ -1,7 +1,7 @@
 public class IntegerTriplet implements Comparable<IntegerTriplet> {
-    protected Integer first;
-    protected Integer second;
-    protected Integer third;
+    protected Integer first; // source vertex
+    protected Integer second; // adjacent vertex
+    protected Integer third; // weight
 
     public IntegerTriplet(Integer first, Integer second, Integer third) {
         this.first = first;
@@ -9,13 +9,9 @@ public class IntegerTriplet implements Comparable<IntegerTriplet> {
         this.third = third;
     }
 
+    // sort by weight
     public int compareTo(IntegerTriplet o) {
-        if (!this.first().equals(o.first()))
-            return this.first() - o.first();
-        else if (!this.second().equals(o.second()))
-            return this.second() - o.second();
-        else
-            return this.third() - o.third();
+        return this.third() - o.third();
     }
 
     public Integer first() { return first; }
